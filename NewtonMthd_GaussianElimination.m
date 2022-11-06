@@ -182,7 +182,7 @@ function [Xk, n] = newton(X0)
     nmax = 10;
 
     while (distance >= 10^(-6)) && (n < nmax) && (difference >= (10^(-6))/2)
-        if (abs(Xk(1))-abs(0.5638) == 10^(-20)) && (abs(Xk(1))-abs(1.4840) == 10^(-6)) && (abs(Xk(1))-abs(0.5638) == 10^(-6)) && (abs(Xk(1))-abs(0.5638) == 10^(-6))
+        if (abs(Xk(1))==abs(0.5638)) || (abs(Xk(1))==abs(1.4840)) || (abs(Xk(1))==abs(0.5638)) || (abs(Xk(1))==abs(0.5638))
             n = 999;
             break
         end
