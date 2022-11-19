@@ -133,9 +133,9 @@ fprintf("\nWe know that the process (Ax = b) is well conditioned when cond(A) is
 fprintf("In our case, the matrix A is the Jacobian matrix used to iterate from each point.\n");
 fprintf("\nAnalyzing figure 3, we can see that in the interval (-5, -1.6) ∪ (+1.6, +5), the process tends to get ill-conditioned as Cond(J(Xk)) tends to ∞.\n")
 fprintf("So that the system Ax = b gets very sensitive to perturbation as x tends to ∞.\n");
-fprintf("Nevertheless, in the restriction -5<=x,y<=5, Cond(J(Xk)) takes values close enough to 1 so that we could consider the process well conditioned as a whole.\n");
-fprintf("And in particular, in the interval (-1.6, +1.6) we observe Cond(J(Xk)) is very close to 1 except in the points\n");
-fprintf("very close to the ones that make the determinant of the Jacobian equal to 0.\n");
+fprintf("Also, in the restriction -5<=x,y<=5, although one could say that Cond(J(Xk)) takes values close to 1, the rapid change of convergence\n");
+fprintf("within the coordinates in the restriction, led us to consider the process ill-conditioned as a whole.\n");
+fprintf("And in particular, in the points that make the determinant of the Jacobian equal to 0.\n");
 
 fprintf("\nQUESTIONS:\n");
 
